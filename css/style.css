@@ -1,1 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 52px;
+}
+* {
+  background-color: black;
+  color: white;
+}
+/***header****/
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+header h1 {
+  margin: 0px 5px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 500;
+}
+header>div {
+  margin: 0 5px;
+}
+header button {
+  background-color: #00000000;
+  border: none;
+}
+header button svg {
+  height: 35px;
+  /**border: 1px solid red;**/
+  padding: 0;
+  margin: 0;
+  transition: height 0.5s;
+}
+header button svg:active {
+  height: 33px;
+}
+header .contactForm {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+/****index page main contant****/
+#table p {
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+tr {
+  border-top: 1.5px solid #abaaaaff;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-column-gap: 20px;
+  transition: font-size 0.5s;
+}
+tr:active {
+  font-size: 1.25rem;
+}
+tr>td:first-child {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+  margin-left: 10px;
+}
+table img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 3px solid #abaaaaff;
+  border-radius: 30px;
+}
+/*****edit contact or add contact*****/
+div.contactPreview {
+  width: 100%;
+  height: 200px;
+  border-radius: 0 0 20px 20px;
+  background-color: #1e1e1eff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 70px;
+} 
 
+#avatarImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 1px solid white;
+  position: absolute;
+  bottom: -50px;
+  overflow: hidden;
+}
+#avatarImage img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 24px;
+  align-items: center;
+}
+form input {
+  width: 90vw;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  padding-left: 10px;
+  font-size: 24px;
+}
+form #avatar {
+  background-color: #e1dcdc00;
+}
